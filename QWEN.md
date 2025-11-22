@@ -11,7 +11,10 @@ This directory serves as a test repository to evaluate different AI tools that r
 ## Directory Structure
 The directory contains test files designed to highlight various code issues:
 - `QWEN.md`: This context file containing project information and instructions for Qwen Code
+- `README.md`: High-level overview of the entire repository and how to use it
 - `test_code.rb`: Ruby file with intentional code issues for testing AI tools
+- `rubocop_ai_test_cases.rb`: Comprehensive test file with multiple test cases for both RuboCop and AI tools
+- `copilot-instruction.md`: Instructions for GitHub Copilot based on the code review guidelines
 - Other test files may be added as needed for different scenarios
 
 ## Working Environment
@@ -117,7 +120,13 @@ This repository follows comprehensive code review guidelines including:
 
 ## AI Tool Testing Setup
 
-This repository is structured to test multiple AI tools, each on a dedicated branch. The purpose is to evaluate how different AI tools handle the same problematic code in `test_code.rb` and how well they identify the issues that match our comprehensive code review rules above.
+This repository is structured to test multiple AI tools, each on a dedicated branch. The purpose is to evaluate how different AI tools handle the same problematic code in `test_code.rb` and `rubocop_ai_test_cases.rb`, and how well they identify the issues that match our comprehensive code review rules above.
+
+The `rubocop_ai_test_cases.rb` file contains comprehensive test cases for both:
+1. RuboCop issues: naming conventions, line length, method length, parameter lists, etc.
+2. AI tool issues: performance problems (N+1 queries), security vulnerabilities, migration issues, concurrency problems, and domain-specific functionality issues
+
+The `copilot-instruction.md` file provides specific instructions for GitHub Copilot to effectively review code according to our established guidelines.
 
 Current Branches:
 - `main`: Contains the reference problematic code in `test_code.rb`
